@@ -12,7 +12,22 @@
       <form class="form" action="#" method="post">
         <!-- TODO fieldset/legend -->
         <div class="form__field">
-          <label>Имя</label><input type="text" placeholder="Введите имя" />
+          <form action="#" method="post">
+          <label for="name">Имя</label>
+          <imput id="name" name="name" type="text">
+          <button type="submit">Отправить</button>
+          </form>
+          <fieldset>
+            <legend>Выберите время</legend>
+            <label><input type="radio" name="time" value="10">10:00</label>
+            <label><input type="radio" name="time" value="18">18:00</label>
+          </fieldset>
+          <label><input type="checkbox" name="agreement" required></label>
+          <select id="route" name="route">
+            <option value="center">Центр</option>
+            <option value="north">Сервер</option>
+          </select>
+          <textarea id="comment" name="comment"></textarea>
         </div>
         <div class="form__field">
           <label>Email</label
